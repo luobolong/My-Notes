@@ -16,7 +16,7 @@ Sparse Representation Theory puts forward a new and highly effective data model,
 
 #### Sparseland Model
 
-![sparseland](./pics/sparseland.png)
+<img src="./pics/sparseland.png" width = "500" align=left />
 
 ### Theoretical & Algorithmic Background
 
