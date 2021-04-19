@@ -208,11 +208,15 @@ may have more than one solution.
 
 General LP structure:
 $$
-(LP) \min_x\underline  c^T\underline x \space s.t.\space \pmb A\underline x=\underline b \space\&\space \underline x \ge \underline0
+(LP):\min_x\underline  c^T\underline x \space s.t.\space \pmb A\underline x=\underline b \space\&\space \underline x \ge \underline0
 $$
 Split the unknown x to its positive and negative entries:
 $$
 \underline x=\underline u-\underline v\space where \space \underline x,\underline u,\underline v \in \R^m \space and \space \underline u\ge\underline 0 \space\&\space \underline v\ge\underline 0
+$$
+We can also get:
+$$
+\underline u^T \underline v=0
 $$
 For P1 problem, 
 $$
@@ -231,3 +235,13 @@ So, the final form looks like:
 $$
 (LP):\min_{\underline u,\underline v}\left[\begin{matrix} \underline 1^T & \underline 1^T\end{matrix}\right]\left[\begin{matrix} \underline u\\\underline v\end{matrix}\right] \space s.t. \space \underline b=\left[\begin{matrix}\pmb A & -\pmb A\end{matrix}\right]\left[\begin{matrix}\underline u\\\underline v\end{matrix}\right] \space and \space \left[\begin{matrix}\underline u\\\underline v\end{matrix}\right] \ge \underline 0
 $$
+However, there is one difficulty - the condition that u and v are orthogonal to each other ruins the LP structure.
+
+> Theorem: The constraint 
+> $$
+> \underline u^T\underline v=0
+> $$
+> is a passive one and thus can be omitted from the LP formulation without harm.
+
+That is, this constraint is a passive constraint.
+
