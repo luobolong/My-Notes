@@ -16,13 +16,13 @@ Sparse Representation Theory puts forward a new and highly effective data model,
 
 #### Sparseland Model
 
-<img src="./pics/sparseland.png" width = "500" align=left />
+<img src="Sparse Representations in Image Processing.assets/sparseland.png" style="zoom: 33%;" />
 
 ### Theoretical & Algorithmic Background
 
 #### An Introduction of L0 and (P0)
 
-![image-20210120162212238](./pics/relation.png)
+<img src="Sparse Representations in Image Processing.assets/relation.png" alt="image-20210120162212238" style="zoom:67%;" />
 $$
 x=D\alpha
 $$
@@ -86,7 +86,7 @@ $$
 
 - Once the support has been updated, the non-zeros are recomputed by a simple Least-Squares.
 
-![OMP](./pics/OMP.png)
+<img src="Sparse Representations in Image Processing.assets/OMP.png" alt="OMP" style="zoom: 50%;" />
 
 In each round, we apply several steps.
 
